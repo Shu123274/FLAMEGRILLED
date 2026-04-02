@@ -1,0 +1,5 @@
+{
+  "name": "FlameGrilled — The Ultimate Burger King Experience",
+  "description": "A high-converting, feature-rich Burger King inspired application with real-time ordering, AI image generation, and Google Maps integration.",
+  "requestFramePermissions": ["geolocation"]
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bk-red: #D62300;
+  --color-bk-orange: #F58220;
+  --color-bk-brown: #502314;
+  --color-bk-cream: #F5EBDC;
+  --color-bk-yellow: #FFC72C;
+}
+
+@layer base {
+  body {
+    @apply bg-bk-cream text-bk-brown font-sans;
+  }
+}
+
+.btn-primary {
+  @apply bg-bk-orange text-white px-6 py-3 rounded-full font-bold transition-all hover:opacity-90 active:scale-95 shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-bk-red text-white px-6 py-3 rounded-full font-bold transition-all hover:opacity-90 active:scale-95 shadow-lg;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
